@@ -16,16 +16,16 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/projects", (req, res) => {
-  res.render("projects");
+app.get("/privacy", (req, res) => {
+  res.render("privacy");
+});
+
+app.get("/terms", (req, res) => {
+  res.render("terms");
 });
 
 app.get("/contact", (req, res) => {
   res.render("contact");
-});
-
-app.get("/resume", (req, res) => {
-  res.render("resume");
 });
 
 app.listen(PORT, () => {

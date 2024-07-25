@@ -1,4 +1,4 @@
-<%- include('partials/header', { title: 'Home' }) %>
+<%- include('partials/header', { title: 'Trang chủ' }) %>
 
     <header class="py-5">
         <div class="container px-5 pb-5">
@@ -7,14 +7,25 @@
                     <!-- Header text content-->
                     <div class="text-center text-xxl-start">
                         <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                            <div class="text-uppercase">Design &middot; Development &middot; Marketing</div>
+                            <div class="text-uppercase">Tiện lợi &middot; Dễ dùng &middot; Chính xác</div>
                         </div>
-                        <div class="fs-3 fw-light text-muted">I can help your business to</div>
-                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get onlinee and
-                                grow fast</span></h1>
+                        <div class="fs-3 fw-light text-muted">Ứng dụng</div>
+                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Ghi điểm<br>Xì
+                                Dách</span></h1>
+
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume">Resume</a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects">Projects</a>
+                            <a class="btn btn-lg border-0" href="#!" style="transition: transform 0.2s;">
+                                <img src="assets/app-store.png" alt="Resume" class="me-2" style="width: 100%;" />
+                            </a>
+                            <a class="btn btn-lg border-0" href="#!" style="transition: transform 0.2s;">
+                                <img src="assets/google-play.png" alt="Resume" class="me-2" style="width: 100%;" />
+                            </a>
+                            <style>
+                                a.btn:hover {
+                                    transform: scale(1.2);
+                                }
+                            </style>
+
                         </div>
                     </div>
                 </div>
@@ -315,8 +326,20 @@
             </div>
         </div>
     </header>
+
+
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Ghi điểm Xì Dách</h2>
+                <h2 class="display-6 fw-bolder mb-4">Ghi điểm dễ dàng</h2>
+
+                <!-- <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact">Contact me</a> -->
+            </div>
+        </div>
+    </section>
     <!-- About Section-->
-    <section class="bg-light py-5">
+    <!-- <section class="bg-light py-5">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xxl-8">
@@ -335,6 +358,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     </main>
     <%- include('partials/footer') %>
