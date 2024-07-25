@@ -1,6 +1,8 @@
 services:
   blackjack-scoring-landing:
-    image: toanhanduc/blackjack-scoring-landing
+    image: toanhanduc/blackjack-scoring-landing:latest
     ports:
-      - "8081:80"
+      - "8081:8081"
     restart: always
+    environment:
+      - NODE_ENV=production
