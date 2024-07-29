@@ -28,6 +28,10 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+app.get("/app-ads.txt", (req, res) => {
+  res.render("app-ads.txt");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
